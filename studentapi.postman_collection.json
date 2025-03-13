@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "4b44866a-e2dc-4742-846f-229ed8e3e7de",
+		"name": "studentapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43079549"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableUrlEncoding": false,
+				"protocolVersion": "auto"
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Janee Doe\",\r\n  \"age\": 22,\r\n  \"email\": \"janeedoe@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.31.16:5000/api/v1/students",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"16"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableUrlEncoding": false,
+				"protocolVersion": "auto",
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Janee Doe\",\r\n  \"age\": 22,\r\n  \"email\": \"janeedoe@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.31.16:5000/api/v1/students",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"16"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableUrlEncoding": false,
+				"protocolVersion": "auto"
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Janee Doe\",\r\n  \"age\": 22,\r\n  \"email\": \"janeedoe@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.31.16:5000/api/v1/students/2",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"16"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"students",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableUrlEncoding": false,
+				"protocolVersion": "auto"
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Janee Doe\",\r\n  \"age\": 22,\r\n  \"email\": \"janeedoe@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.31.16:5000/api/v1/students/2",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"16"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"students",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
