@@ -50,4 +50,19 @@ help:
 	@echo "  docker-clean  - Remove Docker image"
 	@echo "  clean         - Remove temporary files"
 
+# Start DB container
+docker-db:
+	docker compose up -d db
+
+# Run database migrations
+docker-migrate:
+	docker compose run --rm api flask db upgrade
+
+# Build and start API
+docker-up:
+	docker compose up --build -d
+
+# Stop and remove all containers
+docker-down:
+	docker compose down
 

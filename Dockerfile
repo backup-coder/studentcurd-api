@@ -1,10 +1,12 @@
 # Multi-stage Dockerfile for Student CRUD REST API
 
 # === Stage 1: Build Stage ===
-FROM python:3.12-slim AS builder
+FROM python:3.12-alpine AS builder
 
 # Set working directory
 WORKDIR /app
+
+RUN apk add --no-cache libpq postgresql-libs
 
 # Install dependencies
 COPY requirements.txt .
